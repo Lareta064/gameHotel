@@ -90,7 +90,8 @@
 .title-1{
 	font-family: $spl, sans-serif;
 	font-weight: 400;
-	font-size: 73.125px;
+	font-size: 36px;
+	line-height: 40px;
 	line-height: 1.1214;
 	letter-spacing: 0.04em;
 	color: $title;
@@ -99,5 +100,11 @@
 	span{
 		font-family: $sp, sans-serif;
 		font-weight: 700;
+	}
+	@media(min-width:992px) {
+		font-size: 54px;
+	}
+	@media(min-width:1440px){
+		font-size: 73.125px;
 	}
 }
