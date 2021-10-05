@@ -101,6 +101,9 @@
 		font-family: $sp, sans-serif;
 		font-weight: 700;
 	}
+	@media(min-width:768px) {
+		font-size: 42px;
+	}
 	@media(min-width:992px) {
 		font-size: 54px;
 	}

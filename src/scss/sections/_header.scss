@@ -55,7 +55,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	}
-	@media(min-width:992px) {
+	@media(min-width:768px) {
 		padding-top: 100px;
 	}
 	@media(min-width:1200px){
@@ -97,11 +97,13 @@
 	margin-right: auto;
 	margin-top: -45px;
 	padding-right: 20px;
+	position: relative;
 	@media(min-width:768px) {
-		width: 30%;
-		height: 650px;
+		margin-top: 50px;
+		
+		width: 353px;	
 	}
-	@media(min-width:992px) {
+	@media(min-width:1200px) {
 		width: 40%;
 
 	}
@@ -153,7 +155,7 @@
 .header__subtitle{
 	padding-top: 19px;
 	display: none;
-	@media(min-width:768px){
+	@media(min-width:992px){
 		display: block;
 	}
 }
@@ -185,7 +187,7 @@
 		position: relative;
 		z-index: 2;
 	}
-	@media(min-width:768px){
+	@media(min-width:1200px){
 		width: 135px;
 		height: 240px;
 		position: relative;
@@ -220,7 +222,7 @@
 		z-index: 2;
 	}
 	
-	@media(min-width:992px) {
+	@media(min-width:1200px) {
 			width: 47px;
 			height: 47px;
 			span:first-child{
@@ -263,7 +265,7 @@
 	top: 0;
 	right: 0;
 	
-		@media(min-width:992px) {
+		@media(min-width:1200px) {
 			display: flex;
 		}
 }
@@ -272,7 +274,7 @@
 	
 	top:0px;
 	right: 0px;
-	@media(min-width:992px) {
+	@media(min-width:1200px) {
 		top: 34%;
 		right: 20%;
 	}
@@ -280,7 +282,7 @@
 .header-decor3 {
 	top: 33%;
 	left: 21%;
-	@media(min-width:992px) {
+	@media(min-width:1200px) {
 		top: 57%;
 		left: 5%;
 	}
@@ -288,7 +290,7 @@
 .header-decor4 {
 	bottom: 15px;
 	right: -9px;
-	@media(min-width:992px) {
+	@media(min-width:1200px) {
 		top: 77%;
 		right: 10%;
 	}
@@ -303,7 +305,7 @@
 	top: -59px;
 	right: 12px;
     padding-bottom: 20px;
-	@media(min-width:992px){
+	@media(min-width:1200px){
 		width: 402px;
 			align-items: flex-end;
 			position: relative;
@@ -343,7 +345,7 @@
 		position: relative;
 		top: -7px;
 	}
-	@media(min-width:992px){
+	@media(min-width:1200px){
 		top: 0px;
 		right: 0px;
 		background-image: url('../img/header_decor2.png');
@@ -364,7 +366,7 @@
 	top: 12px;
 	right:0px;
 	z-index: 5;
-	@media(min-width:992px) {
+	@media(min-width:1200px) {
 		z-index: 1;
 	}
 	p:after{
@@ -386,7 +388,7 @@
 		height: 1px;
 		width: 214px;
 		background-color: #000;
-		@media(min-width:992px){
+		@media(min-width:1200px){
 			left: -72px;
 			top: 0;
 			width: 72px;
@@ -418,7 +420,7 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 52%;
+	top: 21%;
 	left: 110px;
 	z-index: 6;
 	span{
@@ -439,7 +441,7 @@
 		font-family: $med;
 		color: #000;
 	}
-	@media(min-width:992px){
+	@media(min-width:1200px){
 		position: relative;
 		top:auto;
 		left: auto;
