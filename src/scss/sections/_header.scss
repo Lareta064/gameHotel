@@ -105,6 +105,9 @@
 	}
 	@media(min-width:1200px) {
 		width: 40%;
+		margin-top: 0;
+		padding-right: 0;
+		height: auto;
 
 	}
 	
@@ -192,7 +195,7 @@
 		height: 240px;
 		position: relative;
 		margin-left: auto;
-		transform: translate(-72%, -10%);
+		transform: translate(-56%, -4%);
 		span{
 			line-height: 24px;
 			font-size: 20px;
@@ -309,8 +312,8 @@
 		width: 402px;
 			align-items: flex-end;
 			position: relative;
-			top: -55px;
-			right: -85px;
+			top: -32px;
+			right: -16px;
 			padding-bottom: 20px;
 			flex-direction: row-reverse;
 	}
@@ -346,8 +349,8 @@
 		top: -7px;
 	}
 	@media(min-width:1200px){
-		top: 0px;
-		right: 0px;
+		top: -13px;
+		right: -3px;
 		background-image: url('../img/header_decor2.png');
 		span {
 		font-size: 19.6976px;
@@ -368,6 +371,7 @@
 	z-index: 5;
 	@media(min-width:1200px) {
 		z-index: 1;
+		top:6px;
 	}
 	p:after{
 		content: '';
@@ -389,7 +393,7 @@
 		width: 214px;
 		background-color: #000;
 		@media(min-width:1200px){
-			left: -72px;
+			left: -64px;
 			top: 0;
 			width: 72px;
 			bottom: auto;
