@@ -1,4 +1,4 @@
-* {
+*,*:before, *:after {
 	box-sizing: border-box;
   }
   
@@ -19,7 +19,20 @@
   .noscroll {
 	overflow: hidden;
   }
-  
+   #overlay{
+	   display: none;
+	   position: absolute;
+	   top: 0;
+	   bottom: 0;
+	   left: 0;
+	   right: 0;
+	   background-color: rgba(38,50,58,.6);
+	   backdrop-filter: blur(5px);
+   }
+  #overlay.active{
+	  display: block;
+	  z-index: 10;
+  }
   .container {
 	max-width: 100%;
 	margin-left: auto;
@@ -40,7 +53,11 @@
 	}
 	
   }
- 
+ .container-slim{
+	 max-width:312px;
+	 margin-left: auto;
+	 margin-right: auto;
+ }
   a,
   a:hover {
 	text-decoration: none;
@@ -88,7 +105,7 @@
   -webkit-appearance: none;
   }
 .title-1{
-	font-family: $spl, sans-serif;
+	font-family: $reg, sans-serif;
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 40px;
@@ -98,7 +115,7 @@
 	letter-spacing: 0.04em;
 	
 	span{
-		font-family: $sp, sans-serif;
+		font-family: $bold, sans-serif;
 		font-weight: 700;
 	}
 	@media(min-width:768px) {
@@ -107,7 +124,43 @@
 	@media(min-width:992px) {
 		font-size: 54px;
 	}
-	@media(min-width:1440px){
+	@media(min-width:1200px){
 		font-size: 73.125px;
 	}
+}
+.title-2{
+	font-size: 20px;
+	line-height: 1.4;
+	letter-spacing: 0.15px;
+	font-family: $med;
+	@media(min-width:768px){
+		font-family: $reg;
+		font-size: 34px;
+		line-height: 40px;
+		letter-spacing: 0.25px;
+		font-weight: 400;
+	}
+}
+
+.title-3{
+	font-family: $med;
+	font-size: 20px;
+	line-height: 28px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.15px;
+}
+.title-small{
+	font-family: $med;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.1px;
+	color: $greyText;
+}
+.text-14{
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.25px;
+	color: #263238;
 }
