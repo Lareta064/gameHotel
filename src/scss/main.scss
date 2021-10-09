@@ -2,9 +2,16 @@
 @import "base/_base";
 @import "base/_buttons";
 
-//blocks
-@import "blocks/social-block";
-
 //sections
 @import "sections/header";
+@import "sections/header-login";
+//blocks
+@import "blocks/social-block";
+@import "blocks/custom-select";
+@import "blocks/aside-menu";
+@import "blocks/cards";
+
+
+//sections
 @import "sections/form-1";
+@import "sections/user-profile";
