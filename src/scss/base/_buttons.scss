@@ -1,4 +1,4 @@
-// ======= BUTTONS =======
+/* ======= BUTTONS =======*/
 .button{
 	height:40px;
 	line-height:40px;
@@ -77,4 +77,10 @@
 }
 .btn-text:hover{
 	opacity: .7;
+}
+button.close{
+	span{
+		display: inline-block;
+		transform: rotate(45deg);
+	}
 }
