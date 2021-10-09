@@ -12,6 +12,11 @@
 		padding-left: 8px;
 		padding-right: 8px;
 		background-color: #fff;
+		width: 30%;
+		max-width: 304px;
+	}
+	@media(min-width:1200px) {
+		width: 25%;
 	}
 }
 .sidebar-menu {
