@@ -11,6 +11,8 @@
 	
 }
 .page-content__frame{
+	display: none;
+	&.active{display: block;}
 	@media(min-width:768px) {
 		width: 70%;
 	}
@@ -19,10 +21,22 @@
 		width: 75%;
 	}
 }
-.page-content.d-flex{
+// .page-content.d-flex{
+	
+// 	display: none;
+// 	&.active{display: block;}
+// 	@media(min-width:768px){
+// 		&.active {
+// 			display: flex;
+// 		}
+// 	}
+// }
+.page-content.d-flex.active{
 	display: block;
-	@media(min-width:768px){
-		display: flex;
+	@media(min-width:768px) {
+		
+			display: flex;
+		
 	}
 }
 .user-profile__statistic {
