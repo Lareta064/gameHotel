@@ -1,5 +1,5 @@
 .page-content__frame(data-content="referal")
-	.referal-block
+	.referal-block.referal-block--empty.d-none
 		//============ НЕТ РЕФЕРАЛОВ ============
 		.referal-block__title
 			h2.title-2 Пригласите друзей.<br>Получайте криптовалюту.
@@ -19,4 +19,46 @@
 				p.text-16 У вас пока нет рефералов, но мы верим что они скоро появятся :) 
 		
 		//============ ЕСТЬ РЕФЕРАЛЫ ============
+	.referal-block
+		.referal-block__info.grey-bg
+			p.text-small Накоплено с рефералов
+			.assets-info.d-flex
+				.assets-info__left.d-flex
+					p.text-14 167 000 ₽
+					span
+						+tranding
+				.assets-info__right
+					p / 0,24 ETH
+		.referal-block__body
+			.card-referal
+				.card-referal__text
+					p.text-small Партнёрская ссылка
+					p.referal-link.text-16 https://gamehotel.ru/p448410
+				.card-referal__icon
+					+copy
+		.referal-block__btn
+			button.btn.btn--icon.btn--green(type="button") Вывести средства
 		
+		.user-actions
+			h2.title-2 Перечень операций
+			.user-actions__list
+				.filter-menu.d-flex
+					button.active 7 дней
+					button 14 дней
+					button 1 мес
+					button 1 год
+				.user-actions__cards
+					//====== карточка ========
+					.action-card
+						.action-card__left
+							p.text-16 Иванов Петр
+							p.text-14 23.08.21
+						.action-card__right
+							p.text-16.text-green + 3 049₽
+					//====== карточка ========
+					.action-card
+						.action-card__left
+							p.text-16 Золодцев Александр
+							p.text-14 23.10.21
+						.action-card__right
+							p.text-16.text-green + 3 049₽

@@ -116,7 +116,7 @@
 	}
 }
 
-.referal-block__title {
+.referal-block--empty .referal-block__title {
 	// background: rgba(240, 240, 240, 0.55);
 	margin-bottom: 28px;
 	
@@ -154,7 +154,7 @@
 	}
 }
 
-.referal-block{
+.referal-block--empty .referal-block {
 	
 	padding-top: 40px;
 	@media(min-width:768px){
@@ -166,8 +166,52 @@
 		width: 345px;
 	}
 }
-.referal-block__body,
+
 .referal-block__btn {
 	padding-top: 28px;
 }
 .referal-block__btn{width: 345px;}
+/* referal not empty*/
+.referal-block__info{
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+/* user actions list*/
+.filter-menu{
+	
+	align-items: center;
+	button{
+		font-family: $med;
+		font-size: 14px;
+		height: 40px;
+		border:2px solid transparent;
+		text-align: center;
+		letter-spacing: 0.75px;
+		text-transform: uppercase;
+		padding-left: 10px;
+		padding-right: 10px;
+		white-space: nowrap;
+		transition: .3s;
+		&:hover{
+			border-color: #4FB8FF;
+		}
+		&.active{
+			background: #4FB8FF;
+			border-color: #4FB8FF;
+			color: #fff
+		}
+	}
+	button+button{
+		margin-left: 16px;
+	}
+}
+.referal-block .user-actions{
+	padding-top: 28px;
+	.title-2{
+		margin-bottom: 12px;
+	}
+}
+.user-actions__list .user-actions__cards {
+	padding-top: 28px;
+}

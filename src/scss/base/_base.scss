@@ -108,6 +108,13 @@
   .d-flex{
 	  display: flex;
   }
+  .d-none{display: none;}
+  .grey-bg{
+	  background: rgba(240, 240, 240, 0.55);
+	  @media(min-width:768px){
+		  background-color: #fff;
+	  }
+  }
 .title-1{
 	font-family: $reg, sans-serif;
 	font-weight: 400;
