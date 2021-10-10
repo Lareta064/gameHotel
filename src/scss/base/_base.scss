@@ -204,6 +204,15 @@ letter-spacing: 0.44px;
 	letter-spacing: 0.2px;
 	color: #2980B9;
 }
+.text-10{
+	font-family: $med;
+	font-size: 10px;
+	line-height: 16px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.24);
+
+}
 .text-green{
 	color: $green2;
 }

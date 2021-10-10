@@ -426,3 +426,112 @@
 	color: #263238;
 }
 }
+/* ================ АКТИВЫ ===============*/
+.assets__header{
+	background: rgba(240, 240, 240, 0.55);
+	.text-small{
+		color: rgba(0, 0, 0, 0.24);
+		letter-spacing: -0.2px;
+	}
+	@media(min-width:768px) {
+		margin-top: 28px;;
+	}
+}
+
+.assets-list{
+	.filter-menu button {
+		border:1px solid transparent;
+		text-transform: uppercase;
+		border-radius: 4px;
+		color: $text;
+		&:hover{
+			border: 1px solid #E0E0E0;
+		}
+	}
+	.filter-menu button.active{
+		border: 1px solid #E0E0E0;
+		background-color: transparent;
+	}
+}
+.assets-card__header{
+	
+	h4{
+		font-family: $reg;
+		font-weight:400 ;
+	}
+	p.text-16{
+		font-family: $bold;
+	}
+}
+.assets-card.assets-card--big {
+	justify-content: flex-start;
+	align-items:flex-start;
+	max-width: 343px;
+	width: 100%;
+	transition: .3s;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.01),
+	0px 4px 8px rgba(0, 0, 0, 0.02),
+	0px 1px 12px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	padding-left: 16px;
+	padding-right: 16px;
+	.assets-card_info,
+	.assets-card__img {
+		flex-shrink: 0;
+	}
+	.assets-card_info{
+		flex-grow: 2;
+	}
+	.assets-card__header{
+		justify-content: space-between;
+	}
+}
+.assets-card.assets-card--big:hover{
+	background-color: #fff;
+	transform: translateY(-3px);
+}
+.assets-card--big .assets-card__body .referral-block__info{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	.text-small{
+		color:rgba(0, 0, 0, 0.24);
+	}
+}
+.assets-card--big .icon-btn {
+	margin-left: auto;
+	flex-shrink: 0;
+}
+.assets-types .assets-types__item+.assets-types__item{
+	margin-left: 8px;
+}
+.assets-list__cards{
+	flex-wrap:wrap;
+	padding-top: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	.assets-card{
+		margin-bottom: 16px;
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+	@media(min-width:768px){
+		width: 400px;	
+			
+	}
+	@media(min-width:768px) {
+		width: 100%;
+		margin-left: -8px;
+	}
+}
+.assets-list__filter{
+	width: calc(50% + 47vw);
+	overflow: hidden;
+	overflow-x: auto;
+	padding-left: 16px;
+	scrollbar-width: none;
+	&::-webkit-scrollbar{width: 0;}
+	@media(min-width: 768px){
+		width: auto;
+	}
+}
