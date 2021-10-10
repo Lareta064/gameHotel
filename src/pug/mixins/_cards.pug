@@ -5,7 +5,7 @@ mixin statistic-card(summ, desk, addClass)
 		span.text-link Подробнее
 
 mixin myAssets
-	.assets-card.assets-card--big
+	a(href="assets-card.html").assets-card.assets-card--big
 		.assets-card__img
 			img(src="./img/assets1.jpg", width="40" alt="img")
 		.assets-card_info
@@ -41,5 +41,5 @@ mixin myAssets
 							.assets-types__item
 								img(src="./img/assets-type2.png",  width="40" alt="img")
 						
-						a(href="#!").icon-btn
+						.icon-btn
 							+card-arrow
