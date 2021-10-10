@@ -85,5 +85,28 @@ $(document).ready(function(){
 			thisList.style.maxHeight = 0 + "px";
 			thisList.classList.remove('visible');
 		}
-	})
+	});
+
+	// ==========ТАБЫ==============
+	const tabBtn = document.querySelectorAll('[data-tab]');
+	const tabContent = document.querySelectorAll('[data-content]');
+	for(let i=0; i < tabBtn.length; i++){
+		tabBtn[i].addEventListener('click', function(e){
+			e.preventDefault();
+			
+			for(let btn of tabBtn){
+				btn.classList.remove('active');
+			}
+			this.classList.add('active');
+			const thisData = tabBtn[i].dataset.tab;
+
+			for(let item of tabContent){
+				item.classList.remove('active');
+				const itemData = item.dataset.content;
+				if(itemData == thisData){
+					item.classList.add('active');
+				}
+			}
+		})
+	}
 })
