@@ -1,8 +1,8 @@
 .sidebar
-	.sidebar-menu
+	.sidebar-menu.sidebar-menu--special
 		nav#user-profile-nav-menu
 			//======= menu item ======
-			button.active(data-tab="pulse")
+			button(data-tab="pulse")
 				span.icon-cell
 					+pulse
 				span.text-small Пульс
@@ -13,8 +13,10 @@
 				span.text-small Рефералы
 			//======= menu item ======
 			button(data-tab="chat")
-				span.icon-cell
+				span.icon-cell.icon-cell--desk
 					+chat
+				span.icon-cell.icon-cell--mob
+					+chat2
 				span.text-small Чат
 			//======= menu item ======
 			button(data-tab="finance")
