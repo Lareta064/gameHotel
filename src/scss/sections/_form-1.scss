@@ -135,7 +135,7 @@
 		}
 	}
 }
-form label{
+.form-block__body label {
 	font-size: 12px;
 	line-height: 16px;
 	letter-spacing: 0.2px;
@@ -157,6 +157,13 @@ form label{
 		box-sizing: border-box;
 		border-radius: 4px;
 
+	}
+	input[type="checkbox"] {
+		width: 18px;
+		height: 18px;
+		padding: 0;
+		border-radius: 0;
+		border: 1px solid #F3F3F3;
 	}
 	.input-icon{
 		position: absolute;
