@@ -288,6 +288,58 @@
 		}
 	}
 }
-.user-actions__list .user-actions__cards {
+.referral-block__footer  .user-actions__list .user-actions__cards {
 	padding-top: 28px;
+}
+
+/*=============== USER  FINANCE*/
+.page-content__finance{
+	padding-top: 24px;
+	padding-left: 16px;
+	padding-right: 16px;
+
+	.filter-menu{
+		margin-bottom: 12px;
+	}
+	@media(min-width:768px) {
+		padding-top: 40px;
+		
+		.filter-menu {
+			margin-bottom: 24px;
+		}
+	}
+	@media(min-width:1200px) {padding-left: 40px;}
+	
+}
+.action-card.action-card--img{
+	justify-content: flex-start;
+	padding-left: 0;
+	padding-right: 0;
+	max-width: 345px;
+	width: 343px;
+	box-shadow: none;
+
+	@media(min-width:768px) {
+		padding-left: 16px;
+		padding-right: 16px;
+		width: 490px;
+		max-width: 490px;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16),
+			0px 2px 4px rgba(0, 0, 0, 0.12),
+			0px 1px 8px rgba(0, 0, 0, 0.1);
+			&+.action-card{
+				margin-top: 8px;
+			}
+	}
+	width: 100%;
+	.action-card__icon{
+		margin-right: 16px;
+	}
+	.action-card__right{
+		margin-left: auto;
+		text-align: right;
+	}
+	.text-12{
+		color: #000;
+	}
 }
