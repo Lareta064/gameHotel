@@ -118,6 +118,9 @@
 /*================= referrAL ==========*/
 .referral-block__header{
 	background: rgba(240, 240, 240, 0.55);
+	@media(min-width:768px){
+		margin-top: 28px;
+	}
 }
 .referral-block__title {
 	padding-top: 40px;
