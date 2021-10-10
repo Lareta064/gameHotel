@@ -343,3 +343,86 @@
 		color: #000;
 	}
 }
+/*================== WITHDRAWAL ================*/
+.whithdrawal__header{
+	background: rgba(240, 240, 240, 0.55);
+	padding-top: 8px;
+	padding-bottom: 8px;
+	@media(min-width:768px) {
+		margin-top: 28px;;
+	}
+	.available-card{
+		box-shadow:none;
+		background-color: transparent;
+		width: 100%;
+		max-width: 375px;
+		@media(min-width:768px) {
+			max-width: 490px;
+		}
+	}
+}
+.whithdrawal__body{
+	padding-left: 16px;
+	padding-right: 16px;
+	max-width: 375px;
+	.title-group{
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 8px;
+	}
+	.title-small{
+		letter-spacing: -0.2px;
+	}
+	@media(min-width:768px){
+		max-width: 490px;
+	}
+}
+.whithdrawal-form{
+	padding-top: 32px;
+	.form-item.form-item--check{
+		padding-top: 16px;
+		label{
+			display: flex;
+			align-items: center;
+			color: $text;
+			cursor:pointer;
+			span{padding-left: 5px;}
+
+		}
+	}
+	.form-fieldset{
+		background: #FFFFFF;
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.01),
+		0px 4px 8px rgba(0, 0, 0, 0.02),
+		0px 1px 12px rgba(0, 0, 0, 0.12);
+		border-radius: 4px;
+		padding: 16px;
+		margin-top: 32px;
+		.title-2{
+			margin-bottom: 16px;
+		}
+		.form-item{
+			margin-bottom: 16px;
+		}
+		}
+	.form-fieldset .curName {
+		position: absolute;
+		top: 15px;
+		right: 12px;
+		font-size: 24px;
+		line-height: 28px;
+		color: #000;
+		}
+	.form-fieldset input{
+		padding-right: 20px;
+	}
+}
+.whithdrawal-form .form-item{
+
+ input, input::placeholder {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.44px;
+	color: #263238;
+}
+}

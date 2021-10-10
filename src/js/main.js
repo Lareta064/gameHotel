@@ -109,4 +109,27 @@ $(document).ready(function(){
 			}
 		})
 	}
+	// Tab text switch
+	function tabSwitch(){
+		const navMenu = document.querySelector('#user-profile-nav-menu');
+		// Check for the right page and resolution
+		if(navMenu && window.innerWidth < 768){
+			// Elements
+			const header = document.querySelector('#active-title');
+			const tabs = document.querySelectorAll('[data-tab]');
+			const activeTab = document.querySelector('button.active[data-tab]');
+	
+			// Initial header name
+			header.innerText = activeTab.innerText;
+		
+			// On click set the header text
+			tabs.forEach((el)=>{
+				const tabName = el.querySelector('span.text-small').innerText;
+				el.addEventListener('click', ()=>{header.innerText = tabName});
+			});
+		}
+	}
+	
+	tabSwitch();
+	window.addEventListener('resize', ()=>tabSwitch());
 })
