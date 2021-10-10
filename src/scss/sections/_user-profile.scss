@@ -1,12 +1,13 @@
+//================ USER CABINET CONTENT =================
 .page-content{
-	padding-top: 24px;
+	// padding-top: 24px;
 	padding-left: 16px;
-	padding-right: 16px;
+	// padding-right: 16px;
 	
 	@media(min-width:1364px) {
-		padding-top: 28px;
+		// padding-top: 28px;
 		padding-left: 64px;
-		padding-right: 64px;
+		// padding-right: 64px;
 	}
 	
 }
@@ -16,6 +17,7 @@
 	
 }
 .user-profile__tabs{
+	width: 100%;
 	@media(min-width:768px) {
 		width: 70%;
 	}
@@ -32,8 +34,18 @@
 		
 	}
 }
+/*====================PULSE===================*/
+.page-content__pulse{
+	margin-top: 24px;
+	padding-right: 16px;
+	
+	@media(min-width:1365px){
+		padding-right: 64px;
+	}
+}
 .user-profile__statistic {
-	overflow: auto;	
+	overflow:hidden;
+	overflow-x: auto;	
 	padding-top: 15px;
 	padding-bottom: 15px;
 	margin-top: -15px;
