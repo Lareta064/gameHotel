@@ -81,8 +81,12 @@
 
 	}
 }
-// .slot-block {
-// 	.assets-card+.assets-card{
-// 		margin-top: 12px;
-// 	}
-// }
+.page-content__assets-card h2.title-2.title-desktop,
+.page-content__assets-type h2.title-2.title-desktop{
+	display: none;
+	@media(min-width:768px){
+		display: block;
+		padding-top: 40px;
+
+	}
+}
