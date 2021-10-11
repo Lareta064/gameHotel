@@ -29,8 +29,8 @@
 	
 }
 .assets-type__swipe {
-	margin-left: 8px;
-	padding-left: 8px;
+	
+	padding-left: 16px;
 	width: calc(50% + 47vw);
 	&::-webkit-scrollbar{
 		display: none;
@@ -43,6 +43,7 @@
 	@media(min-width:768px) {
 		width: auto;
 		margin-left:-8px;
+		padding-left: 8px;
 		
 	}
 	.card-mini{

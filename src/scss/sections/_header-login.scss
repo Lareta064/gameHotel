@@ -33,3 +33,9 @@
 
 	}
 }
+.form-block .header__user-menu {
+	margin-left: auto;
+	@media(min-width: 768px){
+		display: none;
+	}
+}

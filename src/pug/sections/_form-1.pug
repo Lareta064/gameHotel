@@ -134,7 +134,25 @@ section.form-block.form-block--chat.visible(data-form="5")
 			button.form-block__header-arrow( type="button" data-close)
 				+arrow-right
 			h2.title-2 Поддержка
-			button.button(type=	"button"  data-btn="1") Вход
+			
+			.header__user-menu
+				.user-menu__item.user-menu__currency
+					.custom-select
+						.select-icon
+							+carret
+						.select-field
+							input(type="text" value="₽" readonly)
+						.select-list
+							ul
+								li.current(data-role="₽") ₽
+								li(data-role="$") $
+								li(data-role="€") €
+				.user-menu__item.user-menu__notify
+					.notify-alert
+					span
+						+notify
+				.user-menu__item.user-menu__ava
+					img(src="./img/profile-avatar.jpg", width="40" alt="user")
 
 		.chat-block
 			//========= один блок чата ===========
