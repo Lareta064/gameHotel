@@ -9,6 +9,11 @@
 	font-size: 14px;
 	padding-left: 12px;
 	padding-right: 12px;
+	transition: .3s;
+	&:hover{
+		background-color: #fdfdfd;
+		border-color:rgba(0, 0, 0, 0.16)
+	}
 }
 .button-color{
 	height: 40px;

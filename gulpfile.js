@@ -60,6 +60,8 @@ gulp.task("scss", function(callback) {
                 overrideBrowserslist: ["last 4 versions"]
             })
         )
+        .pipe(gcmq())
+        .pipe(gulp.dest('dist'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest("./build/css/"))
         .pipe(browserSync.stream());
@@ -133,17 +135,7 @@ gulp.task("html:prettify", function() {
     
     return gulp
     .src('build/**/*.html')
-    .pipe(formatHtml({
-      indent_size: 4,
-      html: {
-        indent_char: '\t',
-        indent_size: 4
-      },
-      js: {
-        indent_char: '\t',
-        indent_size: 4
-      }
-    }))
+    .pipe(formatHtml())
     .pipe(gulp.dest('./build/'))
 });
 
@@ -154,7 +146,7 @@ gulp.task(
     gulp.series(
         gulp.parallel("clean:build"),
         gulp.parallel("scss", "pug", "copy:img", "copy:js", "copy:fonts", "copy:libs"),
-        gulp.parallel("groupmedia"),
+        // gulp.parallel("groupmedia"),
         gulp.parallel("html:prettify"),
         gulp.parallel("server", "watch")
         
