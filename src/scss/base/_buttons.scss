@@ -54,7 +54,10 @@
 	0px 1px 8px rgba(0, 0, 0, 0.1);
 	border-radius: 4px;
 	display: inline-block;
-
+	transition: opacity .3;
+	&:hover{
+		opacity: .8;
+	}
 }
 .btn--light{
 	background: #F3F3F3;
