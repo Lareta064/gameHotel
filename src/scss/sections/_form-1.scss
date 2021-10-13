@@ -173,20 +173,41 @@
 	}
 }
 .form-item.form-item--code{
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	justify-content: center;
 	margin-top: 13px;
 	margin-bottom: 40px;
+	position: relative;
+	&:after{
+		content: '';
+		width: 10px;
+		height: 5px;
+		background-color: #fff;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
 	input{
 		border: 0;
-		width: 24px;
+		
 		color: #121212;
 		font-family: $med;
 		font-size: 20px;
-		text-align: center;
-		border-bottom: 2px solid #4FB8FF;
+		// text-align: center;
+		// border-bottom: 2px solid #4FB8FF;
 		padding: 0;
+		padding-left: 4px;
 		border-radius:0;
+		letter-spacing: 12px;
+		display: inline;
+		 background-image: linear-gradient(to right, #4FB8FF 75%, transparent 75%);
+		 background-position: 0 bottom;
+		 background-repeat: repeat-x;
+		 background-size: 24px 2px;
+		
 		
 	}
 	input+input{
