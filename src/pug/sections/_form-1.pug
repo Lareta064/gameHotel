@@ -48,7 +48,7 @@ section.form-block(data-form="2")
 					button.btn.btn--icon(type="button" data-btn="3") Отправить SMS
 
 //======= Окно для ввода цифр из СМС =========
-section.form-block(data-form="3")
+section.form-block.form-block--confirm.visible(data-form="3")
 	.container-slim
 		button.close-block( type="button" data-close) 
 			span +
@@ -121,7 +121,7 @@ section.form-block(data-form="5")
 				button.btn.btn--light Нет, вы ошиблись
 				
 //======= Окно чата с техподдержкой =========
-section.form-block.form-block--chat(data-form="5")
+section.form-block.visible.form-block--chat(data-form="5")
 	.container-slim
 		button.close-block( type="button" data-close) 
 			span +

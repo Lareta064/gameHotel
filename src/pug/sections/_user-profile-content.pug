@@ -1,16 +1,17 @@
 .user-profile
 	include ../sections/_header-profile
 	.page-content.d-flex
+		//================  САЙДБАР МЕНЮ  СЛЕВА ==============
 		.page-content__sidebar
 			include ../blocks/_aside-menu
+		//=============== КОНТЕНТ ТАБОВ СПРАВА ===========
 		.user-profile__tabs
 			//=========== ПУЛЬС =============
 			include ../lk/_pulse.pug
 
 			//===========РЕФЕРАЛЫ=============
-			//- include ../lk/_referral.pug
-			include ../lk/_referral_2.pug
-
+			// В этой секции вложено два  отдельных блока: один показывается, если у пользователя нт реферало, второй - если есть рефералы.  Структура одна и та же: referral-block__header, .referral-block__body, .referral-block__footer   Разница в контенте
+			include ../lk/_referral.pug
 			//===========ЧАТ=============
 			include ../lk/_chat.pug
 

@@ -277,6 +277,9 @@
 .form-block__img img{
 	border-radius:50%;
 }
+.form-block--confirm .form-block__img img {
+	border-radius: 0;
+}
 .user-phoneNumber {
 	margin-top: 32px;
 	padding-top: 8px;

@@ -8,8 +8,9 @@ const notify = require("gulp-notify");
 const plumber = require("gulp-plumber");
 const pug = require("gulp-pug");
 const del = require("del");
-const formatHtml = require('gulp-format-html')
 var gcmq = require("gulp-group-css-media-queries");
+const formatHtml = require('gulp-format-html')
+
 
 // Таск для сборки Gulp файлов
 gulp.task("pug", function(callback) {
@@ -60,8 +61,6 @@ gulp.task("scss", function(callback) {
                 overrideBrowserslist: ["last 4 versions"]
             })
         )
-        .pipe(gcmq())
-        .pipe(gulp.dest('dist'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest("./build/css/"))
         .pipe(browserSync.stream());
@@ -132,13 +131,11 @@ gulp.task("clean:build", function() {
 });
 
 gulp.task("html:prettify", function() {
-    
     return gulp
     .src('build/**/*.html')
     .pipe(formatHtml())
     .pipe(gulp.dest('./build/'))
 });
-
 // Дефолтный таск (задача по умолчанию)
 // Запускаем одновременно задачи server и watch
 gulp.task(
@@ -146,9 +143,8 @@ gulp.task(
     gulp.series(
         gulp.parallel("clean:build"),
         gulp.parallel("scss", "pug", "copy:img", "copy:js", "copy:fonts", "copy:libs"),
-        // gulp.parallel("groupmedia"),
+        gulp.parallel("groupmedia"),
         gulp.parallel("html:prettify"),
         gulp.parallel("server", "watch")
-        
     )
 );

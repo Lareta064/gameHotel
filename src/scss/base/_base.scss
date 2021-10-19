@@ -217,3 +217,16 @@ color: $text;
 .text-green{
 	color: $green2;
 }
+.gride-wrapper{
+	display: grid;
+	row-gap: 24px;
+	grid-template-columns: repeat(1, 343px);
+	@media (min-width:1200px){
+		grid-template-columns: repeat(2, 345px);
+		column-gap: 15px;
+	}
+	@media (min-width:1440px) {
+		grid-template-columns: repeat(3, 345px);
+		column-gap: 15px;
+	}
+}

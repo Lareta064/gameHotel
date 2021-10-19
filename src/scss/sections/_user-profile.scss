@@ -155,7 +155,7 @@
 	padding-left: 16px;
 	padding-right: 16px;
 	@media(min-width:1365px){
-		padding-left: 40px;
+		padding-left: 0;
 	}
 }
 .referral-block__footer{
@@ -163,7 +163,7 @@
 	padding-left: 16px;
 	padding-right: 16px;
 	@media(min-width:1365px){
-		padding-left: 40px;
+		padding-left: 0;
 	}
 	.text-info{
 		padding-top: 12px;
@@ -194,9 +194,9 @@
 	}
 }
 
-.page-content__referrals  .action-card+.action-card {
-	margin-top: 8px;
-}
+// .page-content__referrals  .action-card+.action-card {
+// 	margin-top: 8px;
+// }
 
 .card-referral__icon {
 	cursor: pointer;
@@ -284,7 +284,7 @@
 	.action-card{
 		width: 343px;
 		@media(min-width:768px){
-			width: 490px;
+			width: 345px;
 		}
 	}
 }
