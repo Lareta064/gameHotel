@@ -1,6 +1,6 @@
 .page-content__frame(data-content="referral")
 	.page-content__referrals
-		//============ ЕСТЬ РЕФЕРАЛЫ ============
+		//============ ЕСЛИ У ПОЛЬЗОВАТЕЛЯ ЕСТЬ РЕФЕРАЛЫ ============
 		.referral-block__header
 			.referral-block__info
 				p.text-small Накоплено с рефералов
@@ -12,12 +12,19 @@
 					.assets-info__right
 						p / 0,24 ETH
 		.referral-block__body
-			.card-referral
-				.card-referral__text
-					p.text-small Партнёрская ссылка
-					p.referral-link.text-16 https://gamehotel.ru/p448410
-				.card-referral__icon
-					+copy
+			.gride-wrapper
+				.card-referral
+					.card-referral__text
+						p.text-small Партнёрская ссылка
+						p.referral-link.text-16 https://gamehotel.ru/p448410
+					.card-referral__icon
+						+copy
+				.card-referral
+					.card-referral__text
+						p.text-small Партнёрская ссылка
+						p.referral-link.text-16 https://gamehotel.ru/p448410
+					.card-referral__icon
+						+copy
 			.referral-block__btn
 				button.btn.btn--icon.btn--green(type="button") Вывести средства
 		.referral-block__footer
@@ -32,12 +39,26 @@
 						button 14 дней
 						button 1 мес
 						button 1 год
-					.user-actions__cards
+					.user-actions__cards.gride-wrapper
 						//====== карточка ========
 						.action-card
 							.action-card__left
 								p.text-16 Иванов Петр
 								p.text-14 23.08.21
+							.action-card__right
+								p.text-16.text-green + 3 049₽
+						//====== карточка ========
+						.action-card
+							.action-card__left
+								p.text-16 Золодцев Александр
+								p.text-14 23.10.21
+							.action-card__right
+								p.text-16.text-green + 3 049₽
+						//====== карточка ========
+						.action-card
+							.action-card__left
+								p.text-16 Золодцев Александр
+								p.text-14 23.10.21
 							.action-card__right
 								p.text-16.text-green + 3 049₽
 						//====== карточка ========

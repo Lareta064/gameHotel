@@ -14,16 +14,29 @@
 			//========= ПРАВАЯ КОЛОНКА НА ДЕСКТОПЕ============
 			.user-profile__section-right
 				//========= ДОСТУПНО К ВЫВОДУ ============
-				.available-card
-					.available-card__text
-						p Доступно к выводу
-					.flex-column
-						.available-card__summ
-							span.text-16 123 849₽
-							span.text-12 1 034 SLP
-						.available-card__button
-							a(href="withdrawal.html").icon-btn
-								+finance
+				.available-cards-wrapper
+					//========= one card =========
+					.available-card
+						.available-card__text
+							p Доступно к выводу
+						.flex-column
+							.available-card__summ
+								span.text-16 123 849₽
+								span.text-12 1 034 SLP
+							.available-card__button
+								a(href="withdrawal.html").icon-btn
+									+finance
+					//========= one card =========
+					.available-card
+						.available-card__text
+							p Доступно к выводу
+						.flex-column
+							.available-card__summ
+								span.text-16 123 849₽
+								span.text-12 1 034 SLP
+							.available-card__button
+								a(href="withdrawal.html").icon-btn
+									+finance
 				//========= ПРИГЛАСИ ДРУГА ============
 				.cta-card
 					button.close

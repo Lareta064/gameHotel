@@ -9,6 +9,8 @@ const plumber = require("gulp-plumber");
 const pug = require("gulp-pug");
 const del = require("del");
 var gcmq = require("gulp-group-css-media-queries");
+const formatHtml = require('gulp-format-html')
+
 
 // Таск для сборки Gulp файлов
 gulp.task("pug", function(callback) {
@@ -128,6 +130,12 @@ gulp.task("clean:build", function() {
     return del("./build");
 });
 
+gulp.task("html:prettify", function() {
+    return gulp
+    .src('build/**/*.html')
+    .pipe(formatHtml())
+    .pipe(gulp.dest('./build/'))
+});
 // Дефолтный таск (задача по умолчанию)
 // Запускаем одновременно задачи server и watch
 gulp.task(
@@ -136,6 +144,7 @@ gulp.task(
         gulp.parallel("clean:build"),
         gulp.parallel("scss", "pug", "copy:img", "copy:js", "copy:fonts", "copy:libs"),
         gulp.parallel("groupmedia"),
+        gulp.parallel("html:prettify"),
         gulp.parallel("server", "watch")
     )
 );

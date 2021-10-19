@@ -48,7 +48,7 @@ section.form-block(data-form="2")
 					button.btn.btn--icon(type="button" data-btn="3") Отправить SMS
 
 //======= Окно для ввода цифр из СМС =========
-section.form-block(data-form="3")
+section.form-block.form-block--confirm.visible(data-form="3")
 	.container-slim
 		button.close-block( type="button" data-close) 
 			span +
@@ -67,12 +67,7 @@ section.form-block(data-form="3")
 				
 				form(action="")
 					.form-item.form-item--code
-						input(type="text" name="confirm_code" tab-index="1")
-						input(type="text" name="confirm_code" tab-index="2")
-						input(type="text" name="confirm_code" tab-index="3")
-						input(type="text" name="confirm_code" tab-index="4")
-						input(type="text" name="confirm_code" tab-index="5")
-						input(type="text" name="confirm_code" tab-index="6")
+						input#confirmCode(type="text" name="confirm_code" maxlength="6")
 					.form-item__text
 						p Мы отправим SMS код для проверки на Ваш телефон #[span + 7 (***) ***-34-44]
 						button.btn-text(type="button" data-btn="4") Отправить код ещё раз
@@ -100,7 +95,7 @@ section.form-block.form-block--success(data-form="4")
 				a.btn.btn--icon(href="#!" ) Наш телеграмм
 
 //======= Окно подтверждения имени =========
-section.form-block.visible(data-form="5")
+section.form-block(data-form="5")
 	.container-slim
 		button.close-block( type="button" data-close) 
 			span +
@@ -126,7 +121,7 @@ section.form-block.visible(data-form="5")
 				button.btn.btn--light Нет, вы ошиблись
 				
 //======= Окно чата с техподдержкой =========
-section.form-block.form-block--chat.visible(data-form="5")
+section.form-block.visible.form-block--chat(data-form="5")
 	.container-slim
 		button.close-block( type="button" data-close) 
 			span +

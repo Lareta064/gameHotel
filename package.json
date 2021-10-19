@@ -22,5 +22,7 @@
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-watch": "^5.0.1"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"gulp-format-html": "^1.2.5"
+	}
 }
