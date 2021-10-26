@@ -1,13 +1,37 @@
+.page-content__frame[data-content="chat"]{
+	height: calc(100vh - 140px);
+	@media(min-width: 768px){
+		height: calc(100vh - 60px);
+	}
+}
 .page-content__chat{
 	padding-left: 16px;
 	padding-right: 16px;
+	position: relative;
+	
+}
+.page-content__frame[data-content="chat"] .page-content__chat {
+
+	@media(min-width:768px) {
+		height: 100%;
+		
+	}
+	@media(min-width:768px) {
+		height: 100%;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 40px;
+	}
 }
 .chat-block__list{
+	padding-top: 60px;
+	&:first-child{padding-top: 0;}
 	h5{
 		font-style: italic;
 		font-weight: normal;
 		font-size: 14px;
 		line-height: 17px;
+		margin: 0;
 		margin-bottom: 15px;
 		text-align: center;
 		letter-spacing: 1px;
@@ -49,6 +73,9 @@
 		border-radius: 10px 10px 0px 10px;
 		width: 280px;
 		p{color: #fff;}
+		@media(min-width:768px){
+			width: auto;
+		}
 	}
 	.chat-text--manager .chat-text__content {
 		background-color: #fff;
@@ -65,13 +92,16 @@
 			line-height: 16px;
 			color: #2980B9;
 		}
-		
+		@media(min-width:768px) {
+			width: auto;
+		}
 		
 	}
 	.chat-text--manager{
 		.chat-text__avatar {
 			order: 1;
 			margin-right: 16px;
+			flex-shrink: 0;
 		}
 		.chat-text__content {
 			order: 2;
@@ -80,6 +110,7 @@
 			order: 3;
 			margin-right: 0;
 			margin-left: 16px;
+			flex-shrink: 0;
 		}
 
 		
@@ -218,10 +249,10 @@
 }
 .chat-block{
 	height: 70vh;
+	overflow: hidden;
 	overflow-y: auto;
 	scrollbar-width: thin;
 	scrollbar-color: #f7f7f7 #FFEFD9;
-	;
 	padding-right: 5px;
 	&::-webkit-scrollbar{
 		width: 5px;
@@ -232,14 +263,14 @@
 
 	&::-webkit-scrollbar-track {
 	background-color: #f7f7f7;
-	;
+	
 	}
 
 	&::-webkit-scrollbar-thumb {
 		border-radius: 10px;
 		background-color: #FFEFD9;
 	}
-
+	
 }
 
 
@@ -247,4 +278,30 @@
 	padding-left: 16px;
 	padding-right: 16px;
 	.container-slim{max-width: 100%;}
+}
+.page-content__frame[data-content="chat"] .chat-block{
+	height: calc(95vh - 180px);
+	padding-right: 10px;
+	@media(min-width: 768px) {
+		padding-right: 20px;
+		
+	}
+	@media(min-width: 1200px) {
+		height: calc(90vh - 180px);
+		padding-right: 40px;
+
+	}
+	
+}
+.page-content__frame[data-content="chat"] .chat-form-wrapper{
+	transform: translateY(100%);
+	bottom: -20px;
+	@media(min-width: 768px) {
+		bottom: 0;
+		transform: translateY(0);
+	}
+	@media(min-width: 1200px) {
+		bottom: 60px;
+		transform: translateY(0);
+	}
 }
